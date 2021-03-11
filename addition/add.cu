@@ -10,7 +10,7 @@ void add(int *a, int *b, int *c)
 int main(void) 
 {
 	int a = 12, b = 13, c;        // host copies
-	int *d_a, *d_b, *d_c;		      // device copies
+	int *d_a, *d_b, *d_c;	      // device copies
 
 	// allocate space for device copies of a,b,c
 	cudaMalloc((void **) &d_a, sizeof(int));
